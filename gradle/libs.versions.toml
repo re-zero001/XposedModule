@@ -1,0 +1,4 @@
+[versions]
+api = "82"
+[libraries]
+api = { module = "de.robv.android.xposed:api", version.ref = "api" }

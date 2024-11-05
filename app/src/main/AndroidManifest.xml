@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:label="@string/app_name"
+        tools:ignore="MissingApplicationIcon">
+
+        <meta-data
+            android:name="XposedModule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="xposedmodule" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+        <meta-data
+            android:name="xposedsharedprefs"
+            android:value="true" />
+        <meta-data
+            android:name="xposedscope"
+            android:resource="@array/need_module" />
+
+    </application>
+</manifest>
