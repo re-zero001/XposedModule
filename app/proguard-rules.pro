@@ -20,8 +20,8 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -keepattributes RuntimeVisibleAnnotations
--keepclassmembers,allowoptimization class org.irena.biliblack.InitInject
--keep public class org.irena.biliblack.InitInject
+-keepclassmembers,allowoptimization class org.irena.xposedmodule.Inject
+-keep public class org.irena.xposedmodule.Inject
 # Obfuscate
 -repackageclasses
 -overloadaggressively
