@@ -79,6 +79,15 @@ afterEvaluate {
         from(layout.buildDirectory.dir("outputs/apk/release")) {
             include("*.apk")
         }
+        from(layout.buildDirectory.dir("outputs/apk/debug")) {
+            include("*.apk")
+        }
         into(releaseDir)
+    }
+    tasks.named("assembleRelease").configure {
+        finalizedBy("copyApkToReleaseDir")
+    }
+    tasks.named("build") {
+        dependsOn("copyApkToReleaseDir")
     }
 }
